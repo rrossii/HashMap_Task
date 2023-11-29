@@ -16,6 +16,13 @@ public class OnlineStoreDatabaseImpl implements OnlineStoreDatabase {
         this.customers = new HashMap<>();
     }
 
+    public Map<Integer, Product> getProducts() {
+        return products;
+    }
+
+    public Map<Integer, Customer> getCustomers() {
+        return customers;
+    }
 
     @Override
     public void addProduct(Product product) {
