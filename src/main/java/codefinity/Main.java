@@ -26,6 +26,7 @@ public class Main {
 
         database.placeOrder(101, 1, 2);
         database.placeOrder(102, 2, 5);
+        database.placeOrder(450, 2, 5);
 
         database.displayAllProducts();
     }

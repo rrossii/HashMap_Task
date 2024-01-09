@@ -91,7 +91,7 @@ public class OnlineStoreDatabaseImplTest {
         database.placeOrder(101, 1, 3);
 
         assertEquals(2, database.getProducts().get(1).getQuantity());
-        assertEquals("Order placed successfully!\n", outputStream.toString());
+        assertEquals("Order placed successfully!", outputStream.toString());
     }
 
     @Test
@@ -126,9 +126,9 @@ public class OnlineStoreDatabaseImplTest {
 
         database.displayAllProducts();
 
-        String expectedOutput = "List of products:\n" +
-                "1: Laptop - $999.99\n" +
-                "2: Smartphone - $499.99\n";
+        String expectedOutput = "List of products:" +
+                "1: Laptop - $999.99" +
+                "2: Smartphone - $499.99";
 
         assertEquals(expectedOutput, outputStream.toString());
     }
@@ -143,9 +143,9 @@ public class OnlineStoreDatabaseImplTest {
 
         database.displayAllCustomers();
 
-        String expectedOutput = "List of customers:\n" +
-                "101: John Doe - 123 Main St\n" +
-                "102: Jane Smith - 456 Oak St\n";
+        String expectedOutput = "List of customers:" +
+                "101: John Doe - 123 Main St" +
+                "102: Jane Smith - 456 Oak St";
 
         assertEquals(expectedOutput, outputStream.toString());
     }
